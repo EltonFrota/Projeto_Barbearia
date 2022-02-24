@@ -27,12 +27,66 @@
         </div>
     </header>
 
-    <main><!-- Tag main, para o conteudo principal-->
-       
+    <main>
+        <!-- Tag main, para o conteudo principal-->
+        <form action="">
+            <label for="nomeSobrenome">Nome e Sobrenome</label>
+            <!--Etiqueta para o Input-->
+            <input type="text" id="nomeSobrenome">
+
+            <label for="email">E-mail</label>
+            <input type="text" id="email" value="email@dominio.com">
+
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" value="(xx) xxxxx-xxxx">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" cols="30" rows="10"></textarea>
+
+            <!--Preferêcia de Contato com radio-->
+            
+            <p>Como prefere o nosso contato?</p>
+            
+            <label for="radio-email">Email</label>
+            <input type="radio" name="contato" value="Email" id="radio-email">
+            
+            <label for="radio-telefone">Telefone</label>
+            <input type="radio" name="contato" value="telefone" id="radio-telefone">
+            
+            <label for="radio-whatsapp">WhatsApp</label>
+            <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" >
+            
+            <!--Marcar horário-->
+
+            <p>Qual horário prefere ser atendido</p>
+            <input type="">
+
+            <label for="novidades">Gostaria de receber nossas novidades por
+                email?</label>
+            <input type="checkbox" id="novidades"> 
+
+            <input type="submit" value="Enviar Formulário">
+
+            <p>Horário de funcionamento</p>
+            <table>
+                <td>
+                    <tr>Dias</tr>
+                    <tr>Segunda</tr>
+                    <tr>Quarta</tr>
+                    <tr>Sexta</tr>
+                </td>
+                <td>
+                    <tr>Horário</tr>
+                    <tr></tr>
+                </td>
+
+            </table>
+
+        </form>
     </main>
 
     <footer>
-        <img src="imagens/logo-branco.png" >
+        <img src="imagens/logo-branco.png">
         <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
     </footer>
 </body>
