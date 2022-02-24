@@ -1,0 +1,102 @@
+body {
+
+}
+
+header {
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+
+/* Exibição dos Menus*/
+.caixa {
+    position: relative; /*Eu quero que essa caixa levante, para que o menu entre na  caixa*/
+    /*Quando mexemos com position: abssolute ele pega a referencia da pagina, 
+    e qdo queremos que alguma coisa fique dentro de um DIV usamos   o position:relative*/
+    width: 940px; /*Essa é uma largura padrão utilizada na web*/
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px; 
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;       
+}
+
+nav a:hover{
+    color: #98a330;
+    text-decoration: underline;
+}
+
+
+
+/*Parte principal da pagina*/
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;    
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    height: 400px;
+    box-sizing: border-box; /*Com esse comando os meus 30% são definitivos*/
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.produtos li:hover{
+    border: 5px solid #98a330;
+}
+
+.produtos li:active{ /*Qdo eu clicar no mouser*/
+
+}
+.produtos li:hover h2 { /*Qdo eu passar o mouser, o titulo aumentará*/
+    font-size: 34px;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao{
+    font-size: 18px;
+}
+
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+/*Parte do rodapé pagina*/
+
+footer {
+    text-align: center;
+    background-image: url("../imagens/bg.jpg");
+    padding: 40px 0;
+}
+
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
