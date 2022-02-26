@@ -1,19 +1,7 @@
-body {}
-
+/*MENU CABEÇALHO: comum em todas as paginas*/
 header {
     background: #BBBBBB;
     padding: 20px 0;
-}
-
-/* Exibição dos Menus*/
-.caixa {
-    position: relative;
-    /*Eu quero que essa caixa levante, para que o menu entre na  caixa*/
-    /*Quando mexemos com position: abssolute ele pega a referencia da pagina, 
-    e qdo queremos que alguma coisa fique dentro de um DIV usamos   o position:relative*/
-    width: 940px;
-    /*Essa é uma largura padrão utilizada na web*/
-    margin: 0 auto;
 }
 
 nav {
@@ -39,16 +27,26 @@ nav a:hover {
     color: #98a330;
     text-decoration: underline;
 }
+/*FIM MENU CABEÇALHO*/
 
+/*INICIO DA PAGINA PRODUTOS - Parte principal da pagina*/
+.caixa {
+    position: relative;
+    /*Eu quero que essa caixa levante, para que o menu entre na  caixa*/
+    /*Quando mexemos com position: abssolute ele pega a referencia da pagina, 
+    e qdo queremos que alguma coisa fique dentro de um DIV usamos   o position:relative*/
+    width: 940px;
+    /*Essa é uma largura padrão utilizada na web*/
+    margin: 0 auto;
+}
 
-
-/*Parte principal da pagina*/
 .produtos {
     width: 940px;
     margin: 0 auto;
     padding: 50px;
 }
 
+/*CAIXAS*/
 .produtos li {
     display: inline-block;
     text-align: center;
@@ -91,9 +89,9 @@ nav a:hover {
     font-weight: bold;
     margin-top: 10px;
 }
+/*FIM DA PAGINA PRODUTOS*/
 
-/*Parte do rodapé pagina*/
-
+/*RODAPÉ: comum em todas as pagina*/
 footer {
     text-align: center;
     background-image: url("../imagens/bg.jpg");
@@ -105,9 +103,9 @@ footer {
     font-size: 13px;
     margin: 20px 0 0;
 }
+/*FIM RODAPÉ*/
 
-/*Formatação da pagina de contato*/
-
+/*INICIO DA PAGINA CONTATO: Formatação da pagina de contato*/
 main {
     width: 940px;
     margin: 0 auto;
@@ -154,6 +152,7 @@ form label, form legend {
     transform: scale(1.1);   
 }
 
+/*Tabela de horários*/
 table {
     margin: 20px 0 40px;
 }
@@ -168,3 +167,4 @@ td, th {
     border: 1px solid #000000;
     padding: 8px 15px;
 }
+/*FIM PAGINA CONTATO*/
