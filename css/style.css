@@ -170,17 +170,18 @@ td, th {
     padding: 8px 15px;
 }/*FIM PAGINA CONTATO*/
 
-
+/*******************************************************************************************/
 /*css da pagina inicial*/
 
 .banner {
     width: 100%;    
 }
+
 .titulo-principal {
     text-align: center;
     font-size: 2em;
     margin: 1em;
-    clear: left;   
+    clear: left;       
 }
 
 .utensilios {
@@ -222,18 +223,22 @@ td, th {
 .itens { /*Mina lista do benefícios*/
     line-height: 1.5em;
 }
+.itens:first-child {
+    font-weight: bold ;
+}
 
 .itens::before{ /*Quando queremos criar um elemento na página, via CSS, antes do elemento do HTML, usamos a propriedade :before.*/
     content: "🟊 ";
 }
-
-
-.itens:first-child {
-    font-weight: bold ; /**/
-}
-
 .imagens-beneficios {
     width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px 0 #000000; /*Sombra da Caixa*/
+}
+
+.imagens-beneficios:hover{
+    opacity: 0.3;
 }
 
 .beneficios {
@@ -259,4 +264,10 @@ td, th {
 .video {
     width: 560px;
     margin: 2em auto;
+}
+/*aplicação de background em tela de no maximo 480px*/
+@media screen and (max-width:480px) {
+    body {
+        background: red;
+    }    
 }
