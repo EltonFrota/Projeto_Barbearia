@@ -30,19 +30,21 @@
     <main>
         <!-- Tag main, para o conteudo principal-->
         <form>
-            <label for="nomeSobrenome">Nome e Sobrenome</label>
-            <input type="text" id="nomeSobrenome" class="input-padrao" required>
+            <fieldset class="informacao">
+                <label for="nomeSobrenome">Nome e Sobrenome</label>
+                <input type="text" id="nomeSobrenome" class="input-padrao" required>
 
-            <label for="email">E-mail</label>
-            <!--para facilitar o preenchimento via mobile estou usando o type="email"-->
-            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+                <label for="email">E-mail</label>
+                <!--para facilitar o preenchimento via mobile estou usando o type="email"-->
+                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
 
-            <label for="telefone">Telefone</label>
-            <!--para facilitar o preenchimento via mobile estou usando o type="tel"-->
-            <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+                <label for="telefone">Telefone</label>
+                <!--para facilitar o preenchimento via mobile estou usando o type="tel"-->
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
 
-            <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" cols="30" rows="10" class="input-padrao"></textarea>
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" cols="30" rows="10" class="input-padrao"></textarea>
+            </fieldset>
 
             <!--Preferência de Contato com radio-->
             <fieldset>
@@ -74,7 +76,7 @@
             </label>
 
             <input type="submit" value="Enviar Formulário" class="enviar">
-            
+
             <table>
                 <thead>
                     <!--Cabeçalho-->
